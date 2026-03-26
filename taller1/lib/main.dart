@@ -33,6 +33,23 @@ class _HomePageState extends State<HomePage> {
   String appBarTitle = 'Hola, Flutter';
   bool isTitleChanged = false;
 
+  // ── método setState() ──
+  void toggleTitle() {
+    setState(() {
+      isTitleChanged = !isTitleChanged;
+      appBarTitle = isTitleChanged ? '¡Título cambiado!' : 'Hola, Flutter';
+    });
+
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        content: Text('Título actualizado'),
+        duration: Duration(seconds: 2),
+      ),
+    );
+  }
+
+  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
