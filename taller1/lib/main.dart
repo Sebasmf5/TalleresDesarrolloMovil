@@ -13,7 +13,8 @@ class MyApp extends StatelessWidget {
       title: 'Taller 1 - Flutter',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        scaffoldBackgroundColor: const Color(0xFF141414),
+        colorScheme: const ColorScheme.dark(primary: Color(0xFF8B0000)),
         useMaterial3: true,
       ),
       home: const HomePage(),
@@ -29,20 +30,23 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  // variables de estado
-  String appBarTitle = 'Hola, Flutter';
-  bool isTitleChanged = false;
+  // 1. Variable de estado inicial requerida
+  String _appBarTitle = 'Hola, Flutter';
+  bool _isTitleChanged = false;
 
-  // ── método setState() ──
-  void toggleTitle() {
+  // 2. Función setState requerida
+  void _toggleTitle() {
     setState(() {
-      isTitleChanged = !isTitleChanged;
-      appBarTitle = isTitleChanged ? '¡Título cambiado!' : 'Hola, Flutter';
+      _isTitleChanged = !_isTitleChanged;
+      _appBarTitle = _isTitleChanged
+          ? '¡Título cambiado!'
+          : 'Hola, Flutter';
     });
 
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(
         content: Text('Título actualizado'),
+        backgroundColor: Color(0xFF225533),
         duration: Duration(seconds: 2),
       ),
     );
@@ -52,152 +56,160 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(appBarTitle),
-        backgroundColor: Colors.deepPurple,
+        title: Text(
+          _appBarTitle,
+          style: const TextStyle(fontWeight: FontWeight.bold),
+        ),
+        backgroundColor: const Color.fromRGBO(34, 85, 51, 1.0),
         foregroundColor: Colors.white,
         centerTitle: true,
       ),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const SizedBox(height: 16),
+            // 3. Text centrado con tu nombre
             const Text(
               'Sebastián Morales Flórez',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 22,
                 fontWeight: FontWeight.bold,
-                color: Colors.deepPurple,
+                color: Color.fromARGB(255, 255, 255, 255),
               ),
             ),
+            const SizedBox(height: 20),
 
-            const SizedBox(height: 24),
-
-            // ── Row con imágenes ──
+            // 4. Row con Image.network e Image.asset
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                // Image.network
-                Column(
-                  children: [
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(10),
-                      child: Image.network(
-                        'https://images.wallpapersden.com/image/download/levi-ackerman-attack-on-titan_65300_1600x900.jpg',
-                        width: 130,
-                        height: 100,
-                        fit: BoxFit.cover,
-                        loadingBuilder: (context, child, progress) {
-                          if (progress == null) return child;
-                          return const SizedBox(
-                            width: 130,
-                            height: 100,
-                            child: Center(child: CircularProgressIndicator()),
-                          );
-                        },
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    const Text(
-                      'Image.network',
-                      style: TextStyle(fontSize: 11, color: Colors.grey),
-                    ),
-                  ],
+                // Imagen de Red
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(8),
+                  child: Image.network(
+                    'https://th.bing.com/th/id/R.6c2197449e6fd4e3cf4ea65e75342b15?rik=Kg1PE9T1xs9Sxg&riu=http%3a%2f%2f3.bp.blogspot.com%2f-VwPCqX1emt4%2fUnDDcTtbRaI%2fAAAAAAAAAeE%2fq3logHHgG0U%2fs1600%2fEscudo%2blegion%2bde%2bexploraci%c3%b3n%2b%5bwww.codezeroft.com.mx%5d.png&ehk=vnUjrDhVqGHDdo2Rqz7i3BVxxHB1NQnmGV1Eu2jy3YU%3d&risl=&pid=ImgRaw&r=0',
+                    width: 120,
+                    height: 120,
+                    fit: BoxFit.cover,
+                  ),
                 ),
-
-                // Image.asset
-                Column(
-                  children: [
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(10),
-                      child: Image.asset(
-                        'assets/images/hange.png', // imagen en assets/images/
-                        width: 130,
-                        height: 100,
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    const Text(
-                      'Image.asset',
-                      style: TextStyle(fontSize: 11, color: Colors.grey),
-                    ),
-                  ],
+                // Imagen Local (¡Asegúrate de tenerla en pubspec.yaml!)
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(8),
+                  child: Image.asset(
+                    'assets/Erwin.jpg',
+                    width: 120,
+                    height: 120,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ],
             ),
+            const SizedBox(height: 24),
 
-            const SizedBox(height: 32),
-
-            // ── Widget adicional: Container ──
-            Container(
-              width: double.infinity,
-              padding: const EdgeInsets.all(16),
-              margin: const EdgeInsets.only(bottom: 24),
-              decoration: BoxDecoration(
-                color: Colors.deepPurple.shade50,
-                border: Border.all(color: Colors.deepPurple, width: 1.5),
-                borderRadius: BorderRadius.circular(12),
+            // 5. ElevatedButton con setState()
+            ElevatedButton(
+              onPressed: _toggleTitle,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color(0xFF225533),
+                foregroundColor: Colors.white,
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 40,
+                  vertical: 14,
+                ),
               ),
               child: const Text(
-                'Widget adicional: Container\nCon color de fondo, borde y bordes redondeados.',
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 14, color: Colors.deepPurple),
+                'Cambiar Título',
+                style: TextStyle(fontSize: 16),
               ),
             ),
+            const SizedBox(height: 24),
 
-            // ── Widget adicional: ListView ──
             const Align(
               alignment: Alignment.centerLeft,
               child: Text(
-                'Widget adicional: ListView',
+                'Titanes Cambiantes',
                 style: TextStyle(
-                  fontSize: 15,
+                  fontSize: 20,
                   fontWeight: FontWeight.bold,
-                  color: Colors.deepPurple,
+                  color: Colors.white,
                 ),
               ),
             ),
-            const SizedBox(height: 8),
-            SizedBox(
-              height: 220,
+            const SizedBox(height: 10),
+
+            // 6. Widget Adicional #1: ListView (dentro de un Expanded para evitar errores de renderizado)
+            Expanded(
               child: ListView(
-                children: const [
-                  ListTile(
-                    leading: Icon(Icons.star, color: Colors.deepPurple),
-                    title: Text('Flutter es multiplataforma'),
+                children: [
+                  _buildTitanCard(
+                    'Titán de Ataque',
+                    'Portador: Eren Jaeger',
+                    'assets/titanAtaque.jpg', // <-- Nombre de tu imagen descargada
                   ),
-                  Divider(height: 1),
-                  ListTile(
-                    leading: Icon(Icons.speed, color: Colors.deepPurple),
-                    title: Text('Rendimiento nativo con Dart'),
+                  _buildTitanCard(
+                    'Titán Colosal',
+                    'Portador: Armin Arlert',
+                    'assets/colosal.jpg', // <-- Nombre de tu imagen descargada
                   ),
-                  Divider(height: 1),
-                  ListTile(
-                    leading: Icon(Icons.palette, color: Colors.deepPurple),
-                    title: Text('UI completamente personalizable'),
-                  ),
-                  Divider(height: 1),
-                  ListTile(
-                    leading: Icon(Icons.code, color: Colors.deepPurple),
-                    title: Text('Hot reload para desarrollo ágil'),
+                  _buildTitanCard(
+                    'Titán Acorazado',
+                    'Portador: Reiner Braun',
+                    'assets/acorazado.jpg', // <-- Nombre de tu imagen descargada
                   ),
                 ],
               ),
             ),
-
-            const SizedBox(height: 32),
-
-            // ── Footer ──
-            Text(
-              'Taller 1 · Desarrollo de Aplicaciones Móviles',
-              style: TextStyle(fontSize: 11, color: Colors.grey.shade500),
-            ),
-            const SizedBox(height: 16),
           ],
         ),
+      ),
+    );
+  }
+
+  // 7. Widget Adicional #2: Stack (Superponer elementos en la tarjeta)
+  
+  Widget _buildTitanCard(String title, String subtitle, String imagePath) {
+    return Container(
+      height: 180,
+      margin: const EdgeInsets.only(bottom: 16),
+      clipBehavior: Clip.antiAlias,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(12),
+        // Aquí le puse el verde que estabas usando (0xFF225533)
+        border: Border.all(color: const Color(0xFF225533), width: 2), 
+      ),
+      child: Stack(
+        fit: StackFit.expand,
+        children: [
+          // ⚠️ AQUÍ ESTÁ EL CAMBIO CLAVE: Image.asset ⚠️
+          Image.asset(imagePath, fit: BoxFit.cover),
+          
+          // Capa oscura para legibilidad
+          Container(color: Colors.black.withOpacity(0.5)),
+          // Textos superpuestos
+          Positioned(
+            bottom: 16,
+            left: 16,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  title,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Text(
+                  subtitle,
+                  style: const TextStyle(color: Colors.white70, fontSize: 16),
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }
