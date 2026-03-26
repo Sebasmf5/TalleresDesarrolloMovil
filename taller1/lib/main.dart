@@ -147,6 +147,55 @@ class _HomePageState extends State<HomePage> {
                 style: TextStyle(fontSize: 14, color: Colors.deepPurple),
               ),
             ),
+
+            // ── Widget adicional: ListView ──
+            const Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                'Widget adicional: ListView',
+                style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.deepPurple,
+                ),
+              ),
+            ),
+            const SizedBox(height: 8),
+            SizedBox(
+              height: 220,
+              child: ListView(
+                children: const [
+                  ListTile(
+                    leading: Icon(Icons.star, color: Colors.deepPurple),
+                    title: Text('Flutter es multiplataforma'),
+                  ),
+                  Divider(height: 1),
+                  ListTile(
+                    leading: Icon(Icons.speed, color: Colors.deepPurple),
+                    title: Text('Rendimiento nativo con Dart'),
+                  ),
+                  Divider(height: 1),
+                  ListTile(
+                    leading: Icon(Icons.palette, color: Colors.deepPurple),
+                    title: Text('UI completamente personalizable'),
+                  ),
+                  Divider(height: 1),
+                  ListTile(
+                    leading: Icon(Icons.code, color: Colors.deepPurple),
+                    title: Text('Hot reload para desarrollo ágil'),
+                  ),
+                ],
+              ),
+            ),
+
+            const SizedBox(height: 32),
+
+            // ── Footer ──
+            Text(
+              'Taller 1 · Desarrollo de Aplicaciones Móviles',
+              style: TextStyle(fontSize: 11, color: Colors.grey.shade500),
+            ),
+            const SizedBox(height: 16),
           ],
         ),
       ),
