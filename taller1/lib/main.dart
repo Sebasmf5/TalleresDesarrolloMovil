@@ -129,7 +129,24 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
 
-            const SizedBox(height: 24),
+            const SizedBox(height: 32),
+
+            // ── Widget adicional: Container ──
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.all(16),
+              margin: const EdgeInsets.only(bottom: 24),
+              decoration: BoxDecoration(
+                color: Colors.deepPurple.shade50,
+                border: Border.all(color: Colors.deepPurple, width: 1.5),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: const Text(
+                'Widget adicional: Container\nCon color de fondo, borde y bordes redondeados.',
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 14, color: Colors.deepPurple),
+              ),
+            ),
           ],
         ),
       ),
