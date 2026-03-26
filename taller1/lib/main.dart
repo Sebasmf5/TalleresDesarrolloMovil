@@ -48,13 +48,11 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(appBarTitle),           // ← ahora usa la variable
+        title: Text(appBarTitle),
         backgroundColor: Colors.deepPurple,
         foregroundColor: Colors.white,
         centerTitle: true,
@@ -64,10 +62,9 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-
             const SizedBox(height: 16),
             const Text(
-              'Sebastián Morales Flórez',    // ← nombre del estudiante
+              'Sebastián Morales Flórez',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 22,
@@ -76,7 +73,63 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
 
-            const SizedBox(height: 16),
+            const SizedBox(height: 24),
+
+            // ── Row con imágenes ──
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                // Image.network
+                Column(
+                  children: [
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(10),
+                      child: Image.network(
+                        'https://images.wallpapersden.com/image/download/levi-ackerman-attack-on-titan_65300_1600x900.jpg',
+                        width: 130,
+                        height: 100,
+                        fit: BoxFit.cover,
+                        loadingBuilder: (context, child, progress) {
+                          if (progress == null) return child;
+                          return const SizedBox(
+                            width: 130,
+                            height: 100,
+                            child: Center(child: CircularProgressIndicator()),
+                          );
+                        },
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                    const Text(
+                      'Image.network',
+                      style: TextStyle(fontSize: 11, color: Colors.grey),
+                    ),
+                  ],
+                ),
+
+                // Image.asset
+                Column(
+                  children: [
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(10),
+                      child: Image.asset(
+                        'assets/images/hange.png', // imagen en assets/images/
+                        width: 130,
+                        height: 100,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                    const Text(
+                      'Image.asset',
+                      style: TextStyle(fontSize: 11, color: Colors.grey),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+
+            const SizedBox(height: 24),
           ],
         ),
       ),
