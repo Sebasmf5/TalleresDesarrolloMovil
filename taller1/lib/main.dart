@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage> {
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(
         content: Text('Título actualizado'),
-        backgroundColor: Color(0xFF225533),
+        backgroundColor: Color.fromARGB(255, 255, 255, 255),
         duration: Duration(seconds: 2),
       ),
     );
@@ -146,17 +146,37 @@ class _HomePageState extends State<HomePage> {
                   _buildTitanCard(
                     'Titán de Ataque',
                     'Portador: Eren Jaeger',
-                    'assets/titanAtaque.jpg', // <-- Nombre de tu imagen descargada
+                    'assets/titanAtaque.jpg', 
                   ),
                   _buildTitanCard(
                     'Titán Colosal',
                     'Portador: Armin Arlert',
-                    'assets/colosal.jpg', // <-- Nombre de tu imagen descargada
+                    'assets/colosal.jpg',
                   ),
                   _buildTitanCard(
                     'Titán Acorazado',
                     'Portador: Reiner Braun',
-                    'assets/acorazado.jpg', // <-- Nombre de tu imagen descargada
+                    'assets/acorazado.jpg', 
+                  ),
+                   _buildTitanCard(
+                    'Titán Hembra',
+                    'Portador: Annie Leonhart',
+                    'assets/Hembra.jpg', 
+
+                  ),_buildTitanCard(
+                    'Titán Bestia',
+                    'Portador: Zeke Yeager',
+                    'assets/Bestia.jpg', 
+
+                  ),_buildTitanCard(
+                    'Titán Carguer',
+                    'Portador: Pieck Finger',
+                    'assets/Carguero.jpg', 
+
+                  ),_buildTitanCard(
+                    'Titán Martillo',
+                    'Portador: Lara Tybur',
+                    'assets/Martillo.png', 
                   ),
                 ],
               ),
