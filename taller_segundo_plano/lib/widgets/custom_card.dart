@@ -9,12 +9,13 @@ class CustomCard extends StatelessWidget {
   final Widget child;
   final CardVariant variant;
   final EdgeInsetsGeometry padding;
-g
-    super.key,
+
+  const CustomCard({
+    Key? key,
     required this.child,
     this.variant = CardVariant.standard,
     this.padding = const EdgeInsets.all(16.0),
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

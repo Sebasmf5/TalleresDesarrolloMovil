@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-/// Mixin para reutilizar la lógica de la consola de logs en los State
 mixin LoggerMixin<T extends StatefulWidget> on State<T> {
   final List<String> logs = [];
 

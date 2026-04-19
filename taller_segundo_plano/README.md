@@ -6,7 +6,7 @@ La aplicación contiene tres demostraciones principales:
 
 1. **Módulo Future (Simulación de API)**: El proyecto utiliza `Future` para simular una petición de red que tarda un par de segundos en responder. Muestra cómo la interfaz de usuario puede exhibir un indicador de carga de forma asíncrona y luego actualizarse con los datos obtenidos. También cuenta con una probabilidad simulada de errores para ilustrar el manejo de excepciones.
 2. **Módulo Timer (Cronómetro)**: Implementa un cronómetro utilizando la clase `Timer`. Demuestra cómo ejecutar código de manera periódica (cada segundo) y cómo controlar su ciclo de vida (iniciar, pausar, reanudar y reiniciar) actualizando la vista en tiempo real de forma segura.
-3. **Módulo Isolate (Tareas Pesadas)**: Para evitar que tareas matemáticamente complejas congelen la pantalla de la aplicación, este módulo ejecuta un bucle muy pesado en un hilo de ejecución completamente separado utilizando `Isolate.spawn`. Se incluye una función adicional para ejecutar la misma tarea en el hilo principal (Main Thread) y así evidenciar cómo se bloquea la interfaz si no se usa un Isolate.
+3. **Módulo Isolate (Tareas Pesadas)**: Para evitar que tareas matemáticamente complejas congelen la pantalla de la aplicación, este módulo ejecuta un bucle muy pesado en un hilo de ejecución completamente separado utilizando `Isolate.spawn`. Se incluye una función adicional para ejecutar la misma tarea en el hilo principal (Main Thread) y así evidenciar cómo se bloquea la interfaz si no se usa un Isolate, como se mencion´o en la clase.
 
 ## Estructura del Proyecto (Árbol)
 
@@ -50,7 +50,7 @@ Para correr el proyecto en un entorno local, se requiere tener el SDK de Flutter
 
 2. **Descargar e instalar las dependencias** (aunque por ahora solo se usen las herramientas base, esto prepara el entorno):
    ```bash
-   flutter pub get
+   flutter pub gets
    ```
 
 3. **Ejecutar la aplicación**:

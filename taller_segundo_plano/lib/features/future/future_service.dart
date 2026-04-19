@@ -1,11 +1,7 @@
 import 'dart:math';
 
-/// Servicio que simula una llamada a API y reporta logs mediante callback.
 class FutureService {
   final Random _rng = Random();
-
-  /// Simula una petición. Llama a [log] con mensajes y niveles.
-  /// Retorna el `String` de datos o lanza una excepción en caso de error simulado.
   Future<String> fetchSimulated(void Function(String text, {String level}) log) async {
     final stopwatch = Stopwatch()..start();
     log('Future: Antes de la llamada', level: 'INFO');
