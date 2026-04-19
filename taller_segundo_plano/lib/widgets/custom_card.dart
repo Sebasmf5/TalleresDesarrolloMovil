@@ -9,8 +9,7 @@ class CustomCard extends StatelessWidget {
   final Widget child;
   final CardVariant variant;
   final EdgeInsetsGeometry padding;
-
-  const CustomCard({
+g
     super.key,
     required this.child,
     this.variant = CardVariant.standard,
