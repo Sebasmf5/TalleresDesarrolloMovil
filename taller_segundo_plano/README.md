@@ -58,3 +58,49 @@ Para correr el proyecto en un entorno local, se requiere tener el SDK de Flutter
    ```bash
    flutter run
    ```
+
+   ## Flujo de la aplicación
+
+   A continuación se muestran capturas que ilustran el flujo y las pantallas principales de la aplicación. Las imágenes están dentro del directorio [ScreenShoots](ScreenShoots).
+
+   ### Menú principal
+
+   ![Menú principal](ScreenShoots/menu.jpg)
+
+   ### Módulo Future (Simulación de API)
+
+   Muestra la petición simulada, respuesta válida y manejo de errores.
+
+   ![Respuesta válida](ScreenShoots/futureValid.jpg)
+
+   ![Error en la petición](ScreenShoots/error.jpg)
+
+   ![Prueba async](ScreenShoots/asynPrueba.jpg)
+
+   ### Módulo Timer (Cronómetro)
+
+   Estados del cronómetro: inicio, pausa, reanudar y reinicio.
+
+   ![Inicio](ScreenShoots/start.jpg)
+
+   ![Pausa](ScreenShoots/pause.jpg)
+
+   ![Reanudar](ScreenShoots/reanudar.jpg)
+
+   ![Reiniciar](ScreenShoots/reset.jpg)
+
+   ### Módulo Isolate (Tareas pesadas)
+
+   Comparación entre ejecutar la tarea en el hilo principal (bloquea UI) y en un `Isolate` (no bloquea).
+
+   ![Hilo principal (bloqueo)](ScreenShoots/hiloPrincipal.jpg)
+
+   ![Isolate (sin bloqueo)](ScreenShoots/hiloIsolate.jpg)
+
+   ### Resultados y otras capturas
+
+   Estado final y ejemplos de pantallas relacionadas con control de versiones y pruebas.
+
+   ![Estado final](ScreenShoots/final.jpg)
+
+   ![Commits y PRs](ScreenShoots/commits.png)
