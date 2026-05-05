@@ -91,25 +91,25 @@ Las capturas se encuentran en la carpeta `ScreenShoots/`. A continuación se inc
 
 - Releases en App Distribution:
 
-![Releases](ScreenShoots/releases.png)
+![Releases](ScreenShoots/nuevo%20release.jpg)
 
 - Testers (dduran@uceva.edu.co visible):
 
-![Testers](ScreenShoots/testers.png)
+![Testers](ScreenShoots/agregartestersprimeraapk.jpg)
 
 - Correo de invitación al tester:
 
-![Invitación](ScreenShoots/invite_email.png)
+![Invitación](ScreenShoots/Captura%20de%20pantalla%202026-05-04%20094229.png)
 
 - App instalada y abierta (clima en Bogotá):
 
-![App instalada](ScreenShoots/app_installed.png)
-![App abierta](ScreenShoots/app_open.png)
+![App instalada](ScreenShoots/nuevoapk.jpg)
+![App abierta](ScreenShoots/apksjuntas.png)
 
 - Evidencia de actualización (antes/después):
 
-![Versión antes](ScreenShoots/version_before.png)
-![Versión después](ScreenShoots/version_after.png)
+![Versión antes](ScreenShoots/version1.0.0.jpg)
+![Versión después](ScreenShoots/version1.0.1.jpg)
 
 Si los nombres de los archivos son distintos, renombra las imágenes o actualiza las rutas arriba.
 
