@@ -87,29 +87,45 @@ Si quieres, puedo automatizar la subida mediante la Firebase CLI, crear un scrip
 
 ## Evidencias (capturas)
 
-Las capturas se encuentran en la carpeta `ScreenShoots/`. A continuación se incluyen las imágenes relevantes incrustadas en el README:
+Las capturas se encuentran en la carpeta `ScreenShoots/`. Haz click en cada imagen para verla en tamaño completo.
 
-- Releases en App Distribution:
+<div style="display:flex;flex-wrap:wrap;gap:16px;align-items:flex-start">
+	<figure style="width:320px;margin:0">
+		<a href="ScreenShoots/nuevo%20release.jpg"><img src="ScreenShoots/nuevo%20release.jpg" style="width:100%;max-height:240px;object-fit:cover;border:1px solid #ddd" alt="Releases"></a>
+		<figcaption style="text-align:center;font-size:90%">Releases en App Distribution</figcaption>
+	</figure>
 
-![Releases](ScreenShoots/nuevo%20release.jpg)
+	<figure style="width:320px;margin:0">
+		<a href="ScreenShoots/agregartestersprimeraapk.jpg"><img src="ScreenShoots/agregartestersprimeraapk.jpg" style="width:100%;max-height:240px;object-fit:cover;border:1px solid #ddd" alt="Testers"></a>
+		<figcaption style="text-align:center;font-size:90%">Testers (dduran@uceva.edu.co)</figcaption>
+	</figure>
 
-- Testers (dduran@uceva.edu.co visible):
+	<figure style="width:320px;margin:0">
+		<a href="ScreenShoots/Captura%20de%20pantalla%202026-05-04%20094229.png"><img src="ScreenShoots/Captura%20de%20pantalla%202026-05-04%20094229.png" style="width:100%;max-height:240px;object-fit:cover;border:1px solid #ddd" alt="Invitación"></a>
+		<figcaption style="text-align:center;font-size:90%">Correo de invitación</figcaption>
+	</figure>
 
-![Testers](ScreenShoots/agregartestersprimeraapk.jpg)
+	<figure style="width:240px;margin:0">
+		<a href="ScreenShoots/nuevoapk.jpg"><img src="ScreenShoots/nuevoapk.jpg" style="width:100%;max-height:240px;object-fit:cover;border:1px solid #ddd" alt="App instalada"></a>
+		<figcaption style="text-align:center;font-size:90%">App instalada</figcaption>
+	</figure>
 
-- Correo de invitación al tester:
+	<figure style="width:240px;margin:0">
+		<a href="ScreenShoots/apksjuntas.png"><img src="ScreenShoots/apksjuntas.png" style="width:100%;max-height:240px;object-fit:cover;border:1px solid #ddd" alt="App abierta"></a>
+		<figcaption style="text-align:center;font-size:90%">App abierta (clima en Bogotá)</figcaption>
+	</figure>
 
-![Invitación](ScreenShoots/Captura%20de%20pantalla%202026-05-04%20094229.png)
+	<figure style="width:320px;margin:0">
+		<a href="ScreenShoots/version1.0.0.jpg"><img src="ScreenShoots/version1.0.0.jpg" style="width:100%;max-height:240px;object-fit:cover;border:1px solid #ddd" alt="Versión antes"></a>
+		<figcaption style="text-align:center;font-size:90%">Versión antes (v1.0.0)</figcaption>
+	</figure>
 
-- App instalada y abierta (clima en Bogotá):
+	<figure style="width:320px;margin:0">
+		<a href="ScreenShoots/version1.0.1.jpg"><img src="ScreenShoots/version1.0.1.jpg" style="width:100%;max-height:240px;object-fit:cover;border:1px solid #ddd" alt="Versión después"></a>
+		<figcaption style="text-align:center;font-size:90%">Versión después (v1.0.1+2)</figcaption>
+	</figure>
 
-![App instalada](ScreenShoots/nuevoapk.jpg)
-![App abierta](ScreenShoots/apksjuntas.png)
-
-- Evidencia de actualización (antes/después):
-
-![Versión antes](ScreenShoots/version1.0.0.jpg)
-![Versión después](ScreenShoots/version1.0.1.jpg)
+</div>
 
 Si los nombres de los archivos son distintos, renombra las imágenes o actualiza las rutas arriba.
 
