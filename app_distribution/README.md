@@ -85,6 +85,34 @@ Archivos de interés
 
 Si quieres, puedo automatizar la subida mediante la Firebase CLI, crear un script `scripts/distribute.sh` o preparar un PDF de evidencia con capturas y enlaces.
 
+## Evidencias (capturas)
+
+Las capturas se encuentran en la carpeta `ScreenShoots/`. A continuación se incluyen las imágenes relevantes incrustadas en el README:
+
+- Releases en App Distribution:
+
+![Releases](ScreenShoots/releases.png)
+
+- Testers (dduran@uceva.edu.co visible):
+
+![Testers](ScreenShoots/testers.png)
+
+- Correo de invitación al tester:
+
+![Invitación](ScreenShoots/invite_email.png)
+
+- App instalada y abierta (clima en Bogotá):
+
+![App instalada](ScreenShoots/app_installed.png)
+![App abierta](ScreenShoots/app_open.png)
+
+- Evidencia de actualización (antes/después):
+
+![Versión antes](ScreenShoots/version_before.png)
+![Versión después](ScreenShoots/version_after.png)
+
+Si los nombres de los archivos son distintos, renombra las imágenes o actualiza las rutas arriba.
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
