@@ -89,42 +89,14 @@ Si quieres, puedo automatizar la subida mediante la Firebase CLI, crear un scrip
 
 Las capturas se encuentran en la carpeta `ScreenShoots/`. Haz click en cada imagen para verla en tamaño completo.
 
-<div style="display:flex;flex-wrap:wrap;gap:16px;align-items:flex-start">
-	<figure style="width:280px;margin:0">
-		<a href="ScreenShoots/nuevo_release.jpg"><img src="ScreenShoots/nuevo_release.jpg" style="width:100%;height:180px;object-fit:contain;border:1px solid #ddd" alt="Releases"></a>
-		<figcaption style="text-align:center;font-size:90%">Releases en App Distribution</figcaption>
-	</figure>
-
-	<figure style="width:280px;margin:0">
-		<a href="ScreenShoots/agregartestersprimeraapk.jpg"><img src="ScreenShoots/agregartestersprimeraapk.jpg" style="width:100%;height:180px;object-fit:contain;border:1px solid #ddd" alt="Testers"></a>
-		<figcaption style="text-align:center;font-size:90%">Testers (dduran@uceva.edu.co)</figcaption>
-	</figure>
-
-	<figure style="width:280px;margin:0">
-		<a href="ScreenShoots/captura_2026-05-04_094229.png"><img src="ScreenShoots/captura_2026-05-04_094229.png" style="width:100%;height:180px;object-fit:contain;border:1px solid #ddd" alt="Invitación"></a>
-		<figcaption style="text-align:center;font-size:90%">Correo de invitación</figcaption>
-	</figure>
-
-	<figure style="width:240px;margin:0">
-		<a href="ScreenShoots/nuevoapk.jpg"><img src="ScreenShoots/nuevoapk.jpg" style="width:100%;height:160px;object-fit:contain;border:1px solid #ddd" alt="App instalada"></a>
-		<figcaption style="text-align:center;font-size:90%">App instalada</figcaption>
-	</figure>
-
-	<figure style="width:240px;margin:0">
-		<a href="ScreenShoots/apksjuntas.png"><img src="ScreenShoots/apksjuntas.png" style="width:100%;height:160px;object-fit:contain;border:1px solid #ddd" alt="App abierta"></a>
-		<figcaption style="text-align:center;font-size:90%">App abierta (clima en Bogotá)</figcaption>
-	</figure>
-
-	<figure style="width:280px;margin:0">
-		<a href="ScreenShoots/version1.0.0.jpg"><img src="ScreenShoots/version1.0.0.jpg" style="width:100%;height:180px;object-fit:contain;border:1px solid #ddd" alt="Versión antes"></a>
-		<figcaption style="text-align:center;font-size:90%">Versión antes (v1.0.0)</figcaption>
-	</figure>
-
-	<figure style="width:280px;margin:0">
-		<a href="ScreenShoots/version1.0.1.jpg"><img src="ScreenShoots/version1.0.1.jpg" style="width:100%;height:180px;object-fit:contain;border:1px solid #ddd" alt="Versión después"></a>
-		<figcaption style="text-align:center;font-size:90%">Versión después (v1.0.1+2)</figcaption>
-	</figure>
-
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <div><p>Releases en App Distribution</p><img src="ScreenShoots/nuevo_release.jpg" width="250" /></div>
+  <div><p>Testers (dduran@uceva.edu.co)</p><img src="ScreenShoots/agregartestersprimeraapk.jpg" width="250" /></div>
+  <div><p>Correo de invitación</p><img src="ScreenShoots/captura_2026-05-04_094229.png" width="250" /></div>
+  <div><p>App instalada</p><img src="ScreenShoots/nuevoapk.jpg" width="250" /></div>
+  <div><p>App abierta (clima Bogotá)</p><img src="ScreenShoots/apksjuntas.png" width="250" /></div>
+  <div><p>Versión antes (v1.0.0)</p><img src="ScreenShoots/version1.0.0.jpg" width="250" /></div>
+  <div><p>Versión después (v1.0.1+2)</p><img src="ScreenShoots/version1.0.1.jpg" width="250" /></div>
 </div>
 
 Si los nombres de los archivos son distintos, renombra las imágenes o actualiza las rutas arriba.
