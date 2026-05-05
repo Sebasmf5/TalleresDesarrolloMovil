@@ -90,38 +90,38 @@ Si quieres, puedo automatizar la subida mediante la Firebase CLI, crear un scrip
 Las capturas se encuentran en la carpeta `ScreenShoots/`. Haz click en cada imagen para verla en tamaño completo.
 
 <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:flex-start">
-	<figure style="width:320px;margin:0">
-		<a href="ScreenShoots/nuevo%20release.jpg"><img src="ScreenShoots/nuevo%20release.jpg" style="width:100%;max-height:240px;object-fit:cover;border:1px solid #ddd" alt="Releases"></a>
+	<figure style="width:280px;margin:0">
+		<a href="ScreenShoots/nuevo_release.jpg"><img src="ScreenShoots/nuevo_release.jpg" style="width:100%;height:180px;object-fit:contain;border:1px solid #ddd" alt="Releases"></a>
 		<figcaption style="text-align:center;font-size:90%">Releases en App Distribution</figcaption>
 	</figure>
 
-	<figure style="width:320px;margin:0">
-		<a href="ScreenShoots/agregartestersprimeraapk.jpg"><img src="ScreenShoots/agregartestersprimeraapk.jpg" style="width:100%;max-height:240px;object-fit:cover;border:1px solid #ddd" alt="Testers"></a>
+	<figure style="width:280px;margin:0">
+		<a href="ScreenShoots/agregartestersprimeraapk.jpg"><img src="ScreenShoots/agregartestersprimeraapk.jpg" style="width:100%;height:180px;object-fit:contain;border:1px solid #ddd" alt="Testers"></a>
 		<figcaption style="text-align:center;font-size:90%">Testers (dduran@uceva.edu.co)</figcaption>
 	</figure>
 
-	<figure style="width:320px;margin:0">
-		<a href="ScreenShoots/Captura%20de%20pantalla%202026-05-04%20094229.png"><img src="ScreenShoots/Captura%20de%20pantalla%202026-05-04%20094229.png" style="width:100%;max-height:240px;object-fit:cover;border:1px solid #ddd" alt="Invitación"></a>
+	<figure style="width:280px;margin:0">
+		<a href="ScreenShoots/captura_2026-05-04_094229.png"><img src="ScreenShoots/captura_2026-05-04_094229.png" style="width:100%;height:180px;object-fit:contain;border:1px solid #ddd" alt="Invitación"></a>
 		<figcaption style="text-align:center;font-size:90%">Correo de invitación</figcaption>
 	</figure>
 
 	<figure style="width:240px;margin:0">
-		<a href="ScreenShoots/nuevoapk.jpg"><img src="ScreenShoots/nuevoapk.jpg" style="width:100%;max-height:240px;object-fit:cover;border:1px solid #ddd" alt="App instalada"></a>
+		<a href="ScreenShoots/nuevoapk.jpg"><img src="ScreenShoots/nuevoapk.jpg" style="width:100%;height:160px;object-fit:contain;border:1px solid #ddd" alt="App instalada"></a>
 		<figcaption style="text-align:center;font-size:90%">App instalada</figcaption>
 	</figure>
 
 	<figure style="width:240px;margin:0">
-		<a href="ScreenShoots/apksjuntas.png"><img src="ScreenShoots/apksjuntas.png" style="width:100%;max-height:240px;object-fit:cover;border:1px solid #ddd" alt="App abierta"></a>
+		<a href="ScreenShoots/apksjuntas.png"><img src="ScreenShoots/apksjuntas.png" style="width:100%;height:160px;object-fit:contain;border:1px solid #ddd" alt="App abierta"></a>
 		<figcaption style="text-align:center;font-size:90%">App abierta (clima en Bogotá)</figcaption>
 	</figure>
 
-	<figure style="width:320px;margin:0">
-		<a href="ScreenShoots/version1.0.0.jpg"><img src="ScreenShoots/version1.0.0.jpg" style="width:100%;max-height:240px;object-fit:cover;border:1px solid #ddd" alt="Versión antes"></a>
+	<figure style="width:280px;margin:0">
+		<a href="ScreenShoots/version1.0.0.jpg"><img src="ScreenShoots/version1.0.0.jpg" style="width:100%;height:180px;object-fit:contain;border:1px solid #ddd" alt="Versión antes"></a>
 		<figcaption style="text-align:center;font-size:90%">Versión antes (v1.0.0)</figcaption>
 	</figure>
 
-	<figure style="width:320px;margin:0">
-		<a href="ScreenShoots/version1.0.1.jpg"><img src="ScreenShoots/version1.0.1.jpg" style="width:100%;max-height:240px;object-fit:cover;border:1px solid #ddd" alt="Versión después"></a>
+	<figure style="width:280px;margin:0">
+		<a href="ScreenShoots/version1.0.1.jpg"><img src="ScreenShoots/version1.0.1.jpg" style="width:100%;height:180px;object-fit:contain;border:1px solid #ddd" alt="Versión después"></a>
 		<figcaption style="text-align:center;font-size:90%">Versión después (v1.0.1+2)</figcaption>
 	</figure>
 
