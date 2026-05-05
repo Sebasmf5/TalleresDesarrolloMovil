@@ -176,7 +176,7 @@ class _WeatherPageState extends State<WeatherPage> {
                                   const SizedBox(height: 18),
                                   ElevatedButton.icon(onPressed: _fetchWeather, icon: const Icon(Icons.refresh), label: const Text('Actualizar')),
                                   const SizedBox(height: 8),
-                                  Text('Versión 1.0.0+1', style: theme.textTheme.bodySmall),
+                                  Text('Versión 1.0.1+2', style: theme.textTheme.bodySmall),
                                 ],
                               ),
                             ),

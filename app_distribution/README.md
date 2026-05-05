@@ -1,6 +1,8 @@
 ## app_distribution
 
-Proyecto simple en Flutter que muestra una cita aleatoria desde https://api.quotable.io.
+Proyecto simple en Flutter que muestra el clima en Bogotá consumiendo una API de clima (p. ej. OpenWeatherMap).
+
+Nota: la primera versión publicada (`v1.0`) fue un intento fallido; la versión funcional y actual es `1.0.1+2`.
 
 Flujo (breve):
 
