@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "69612430881",
+    "project_id": "app-distribution-clima",
+    "storage_bucket": "app-distribution-clima.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69612430881:android:f18728353ee363bd2ca560",
+        "android_client_info": {
+          "package_name": "com.example.app_distribution"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtyIeI8x01LkOh1HR3cbaIdsyFkv07fvg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
